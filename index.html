@@ -15,6 +15,7 @@
       Height: 7%;
       width: 100%;
       margin-left: -8px;
+
     }
     header > #header-img {
       WIDTH:5%;
@@ -32,15 +33,28 @@
       font-size: 2.4em;
   }
 .products{
-  position:static;
-  width:400px;
-  height:400px;
-  margin-top:100px;
-  border-style:solid;
+  display:flex;
+  flex-direction: column;
+  width:90%;
+  height:80vh;
   background-color:;
+  border-style:solid;
+  border-color:black;
+  margin-left:auto;
+  margin-right:auto;
 
 }
+.products > img {
+  width:140px;
+  height:170px;
+}
+.products > h1{
+  align-self: center;
+  text-decoration: underline;
+}
+.progress > p{
 
+}
 
 
 #video-link{
@@ -48,7 +62,7 @@
   width:100%;
   background-color:lightblue;
   justify-content:center;
-  margin-top:2.8%;
+  margin-top:3.5%;
 }
 @media (max-width: 400px) {
 #video {
@@ -72,20 +86,29 @@
   <div id="video-link">
 <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/W68YfvZ44jw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
-   <section>
+<div class="products"> <img  id="scissor1" src="scissors-1.jpg"><h1> Offcut 1.0 </h1>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, vero, quos? Numquam molestias voluptatibus ad.</p>
 
-     <section>
+<ul>
+  <li> 13 cm / 5" </li>
+  <li> stainless steel blades </li>
+  <li> reinforced with titanium </li>
+  <li> highly polished surface </li>
+  <li> ergonomically shaped  grip handle for very comfortable and precise work</li>
+  <li> Ideal for the home and office, for cutting through paper, cardboard, fabric and more.</li>
+  <li> Lifetime manufacturer guarantee</li>
+</ul>
+</div>
+<div class="products"> <img id="scissor2" src="scissors-2.svg"><h1>title</h1> <p></p> </div>
+<div class="products"> <img  id="scissor3" src="scissors-3.png"><h1>title</h1> <p></p> </div>
+
+<section>
 <form id="form" action="https://www.freecodecamp.com/email-submit" method="post">
-  <input id="email" type="email" placeholder="Usersemail@example.com" name="email">
-  <input type="submit" id="submit">
-  </form>
+<input id="email" type="email" placeholder="Usersemail@example.com" name="email">
+<input type="submit" id="submit">
+</form>
 <br>
-</section>
-
- <img class="products" id="scissor1" src="scissors-1.jpg">
-  <img class="products" id="scissor2" src="scissors-2.svg">
-  <img class="products" id="scissor3" src="scissors-3.png">
-
+</section >
 </body>
 
 </html>
